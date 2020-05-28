@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="341.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pty.grape2.core.controller.config.ConfigServiceController">
+    <Label layoutX="81.0" layoutY="139.0" styleClass="toggle-label" text="Mysql:">Wifi (separate label)</Label>
+    <JFXToggleButton fx:id="tglBtnMysql" focusTraversable="false" layoutX="181.0" layoutY="120.0" styleClass="mysql-jfx-toggle-button" text="" />
+   <Label layoutX="81.0" layoutY="184.0" styleClass="toggle-label" text="Nginx:" />
+   <JFXToggleButton fx:id="tglBtnNginx" focusTraversable="false" layoutX="181.0" layoutY="165.0" styleClass=".nginx-jfx-toggle-button" text="" />
+   <Label focusTraversable="false" layoutX="81.0" layoutY="228.0" text="服务端:">
+       <font>
+           <Font size="14.0" />
+       </font>
+   </Label>
+   <JFXToggleButton focusTraversable="false" layoutX="181.0" layoutY="209.0" styleClass="server-jfx-toggle-button" text="" />
+   <Label focusTraversable="false" layoutX="67.0" layoutY="89.0" text="服务名后缀:">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="textFieldServiceSuffix" focusTraversable="false" layoutX="178.0" layoutY="87.0" prefHeight="23.0" prefWidth="107.0" styleClass="service-name-suffix" />
+   <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="247.0" layoutY="287.0" prefHeight="23.0" prefWidth="55.0" styleClass="button-cus" text="保存" />
+   <VBox maxHeight="-Infinity" prefHeight="40.0" prefWidth="350.0">
+      <children>
+         <AnchorPane fx:id="titlePane" maxHeight="-Infinity" prefHeight="40.0" prefWidth="350.0" style="-fx-background-color: derive(#5264AE, -20%);">
+            <children>
+               <JFXHamburger fx:id="burger" layoutX="14.0" layoutY="13.0">
+                  <animation>
+                     <HamburgerBackArrowBasicTransition />
+                  </animation>
+               </JFXHamburger>
+            </children>
+         </AnchorPane>
+      </children>
+   </VBox>
+   <stylesheets>
+      <URL value="@../../css/jfoenix-main-demo.css" />
+      <URL value="@../../css/jfoenix-customer.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="springboot-javafx-support-2.1.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/launch/src/main/resources/lib/springboot-javafx-support-2.1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

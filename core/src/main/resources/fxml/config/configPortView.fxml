@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="327.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pty.grape2.core.controller.config.ConfigPortController">
+   <Label focusTraversable="false" layoutX="79.0" layoutY="91.0" text="Mysql端口:">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="textFieldServiceSuffix" focusTraversable="false" layoutX="159.0" layoutY="91.0" prefHeight="23.0" prefWidth="72.0" styleClass="service-name-suffix" />
+   <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="262.0" layoutY="279.0" prefHeight="23.0" prefWidth="55.0" styleClass="button-cus" text="保存" />
+   <VBox maxHeight="-Infinity" prefHeight="40.0" prefWidth="350.0">
+      <children>
+         <AnchorPane fx:id="titlePane" maxHeight="-Infinity" prefHeight="40.0" prefWidth="350.0" style="-fx-background-color: derive(#5264AE, -20%);">
+            <children>
+               <JFXHamburger fx:id="burger" layoutX="14.0" layoutY="13.0">
+                  <animation>
+                     <HamburgerBackArrowBasicTransition />
+                  </animation>
+               </JFXHamburger>
+            </children>
+         </AnchorPane>
+      </children>
+   </VBox>
+   <Label focusTraversable="false" layoutX="79.0" layoutY="146.0" text="Nginx端口:">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="textFieldServiceSuffix1" focusTraversable="false" layoutX="159.0" layoutY="146.0" prefHeight="23.0" prefWidth="72.0" styleClass="service-name-suffix" />
+   <Label focusTraversable="false" layoutX="63.0" layoutY="201.0" text="后端服务端口:">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="textFieldServiceSuffix2" focusTraversable="false" layoutX="159.0" layoutY="201.0" prefHeight="23.0" prefWidth="72.0" styleClass="service-name-suffix" />
+   <stylesheets>
+      <URL value="@../../css/jfoenix-main-demo.css" />
+      <URL value="@../../css/jfoenix-customer.css" />
+   </stylesheets>
+</AnchorPane>

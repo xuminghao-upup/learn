@@ -1,0 +1,120 @@
+.spinner-track .track {
+    -fx-stroke: #d0d0d0;
+}
+.text-area-console {
+    -fx-font-weight: NORMAL;
+}
+
+.title-cus {
+    /*-fx-font-family: "Roboto Medium";*/
+    -fx-font-family: "Roboto Bold";
+    -fx-font-size: 16.0;
+}
+
+.menu-label {
+    -fx-pref-width: 60px;
+    -fx-max-width: 200px;
+}
+
+.list-view .jfx-list-cell:odd:selected,
+.list-view .jfx-list-cell:even:selected .jfx-list-cell-container {
+    -fx-text-fill: black;
+    -fx-background-color: white;
+    -fx-fill: white;
+
+}
+
+.jfx-list-cell ,
+.jfx-list-cell:odd,
+.jfx-list-cell:even,
+.jfx-list-cell{
+    -fx-fill: red;
+    -jfx-rippler-fill: red;
+}
+
+/*.jfx-list-cell:selected .label {*/
+    /*-fx-text-fill: black;*/
+    /*-fx-background-color: white;*/
+/*}*/
+
+.jfx-list-cell .label {
+    -fx-text-fill: black;
+    /*-fx-background-color: white;*/
+    -fx-font-family: "Roboto";
+    -fx-font-size: 12.0;
+}
+
+.jfx-list-cell:odd:focused,
+.jfx-list-cell:even:focused {
+    -fx-background-color: WHITE;
+}
+
+.jfx-list-cell {
+    -jfx-rippler-fill: WHITE;
+}
+
+
+.jfx-list-view{
+    -fx-pref-width: 74;
+    -fx-max-width: 200;
+    -fx-max-height: 200;
+}
+
+.main-button-start .main-button-stop .main-button-stop {
+    /*-fx-text-fill:WHITE;*/
+    /*-fx-background-color:#5264AE;*/
+    /*-fx-background-color: rgb(102.0, 153.0, 102.0);*/
+    -fx-background-color:WHITE;
+    -fx-font-size:16px;
+    -fx-font-family: "Roboto Bold";
+}
+
+.nginx-jfx-toggle-button {
+    -jfx-toggle-color: #0F9D58;
+}
+
+.mysql-jfx-toggle-button {
+    -jfx-toggle-color: #4285F4;
+}
+
+.server-jfx-toggle-button {
+    /*-jfx-toggle-color: #f45157;*/
+    -jfx-toggle-color: #f49408;
+}
+
+.button-cus {
+    -fx-background-color:#5264AE;
+    -fx-text-fill: white;
+}
+
+.button-folder {
+    -fx-pref-width: 18;
+}
+
+.service-name-suffix {
+    -fx-background-color: transparent;
+}
+
+.jfx-tool-bar .jfx-options-burger {
+    -fx-pref-width: 4px;
+}
+
+.jfx-text-field-cus {
+    -fx-background-color: transparent;
+    -fx-font-weight: BOLD;
+    -fx-prompt-text-fill: #808080;
+    -fx-alignment: top-left;
+    /*-fx-max-width: 300.0;*/
+    /*-fx-pref-width: 300.0;*/
+    /*-jfx-focus-color: #4059A9;*/
+    -jfx-focus-color: #4d4d4d;
+    -jfx-unfocus-color: #4d4d4d;
+}
+
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: rgba(22, 70, 168, 0.91);
+}
+
+.jfx-tab-pane .headers-region .tab-selected-line {
+    -fx-background-color: #509bff;;
+}

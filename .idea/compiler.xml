@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="core" />
+        <module name="launch" />
+        <module name="springboot-javafx-support" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="core" target="1.8" />
+      <module name="grape2" target="1.8" />
+      <module name="launch" target="1.8" />
+      <module name="springboot-javafx-support" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

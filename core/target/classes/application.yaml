@@ -1,0 +1,9 @@
+spring:
+  jmx:
+    enabled: false
+
+javafx:
+  title: 预算单位财务服务平台
+
+
+

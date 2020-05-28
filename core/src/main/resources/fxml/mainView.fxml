@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="620.0" style="-fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pty.grape2.core.controller.MainController">
+   <children>
+      <JFXSpinner fx:id="spinnerServer" layoutX="538.0" layoutY="389.0" prefHeight="23.0" prefWidth="24.0" radius="32.0" startingAngle="0.0" styleClass="spinner-track" />
+      <JFXTextArea fx:id="textAreaConsole" editable="false" focusColor="WHITE" focusTraversable="false" labelFloat="true" layoutX="35.0" layoutY="151.0" prefHeight="228.0" prefWidth="547.0" unFocusColor="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextArea>
+      <Label focusTraversable="false" layoutY="31.0" prefHeight="45.0" prefWidth="620.0" style="-fx-background-color: #5264AE;" />
+      <Label fx:id="labelMenuService" layoutX="25.0" layoutY="46.0" prefHeight="25.0" prefWidth="40.0" styleClass="title-cus" stylesheets="@../css/jfoenix-customer.css" text="服务" textFill="WHITE" />
+      <VBox fx:id="boxTitle" maxHeight="-Infinity" prefHeight="35.0" prefWidth="620.0">
+         <children>
+            <AnchorPane fx:id="titlePane" maxHeight="-Infinity" prefHeight="35.0" prefWidth="620.0" style="-fx-background-color: derive(#5264AE, -20%);">
+               <stylesheets>
+                  <URL value="@../css/jfoenix-main-demo.css" />
+                  <URL value="@../css/jfoenix-design.css" />
+                  <URL value="@../css/jfoenix-fonts.css" />
+                  <URL value="@../css/jfoenix-customer.css" />
+               </stylesheets>
+               <children>
+                  <Text fx:id="textTitle" layoutX="24.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <JFXButton fx:id="btnMin" focusTraversable="false" layoutX="537.0" layoutY="6.0" prefHeight="28.0" prefWidth="40.0" />
+                  <JFXButton fx:id="btnClose" focusTraversable="false" layoutX="579.0" layoutY="6.0" prefHeight="28.0" prefWidth="40.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <JFXButton fx:id="btnStart" buttonType="RAISED" focusTraversable="false" layoutX="35.0" layoutY="90.0" prefHeight="40" prefWidth="100" style="-fx-font-size:16px;-fx-background-color:WHITE;" text="启    动" />
+      <JFXButton fx:id="btnStop" buttonType="RAISED" focusTraversable="false" layoutX="180.0" layoutY="90.0" prefHeight="40" prefWidth="100" style="-fx-font-size:16px;-fx-background-color:WHITE;" text="停    止" />
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" focusTraversable="false" layoutX="325.0" layoutY="90.0" prefHeight="40" prefWidth="100" style="-fx-font-size: 16px; -fx-background-color: WHITE;" text="登录系统" />
+      <Label fx:id="labelServer" focusTraversable="false" layoutX="493.0" layoutY="391.0" text="应用:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <JFXSpinner fx:id="spinnerMysql" layoutX="390.0" layoutY="389.0" prefHeight="23.0" prefWidth="24.0" radius="32.0" startingAngle="0.0" styleClass="spinner-track" />
+      <Label fx:id="labelMysql" layoutX="338.0" layoutY="391.0" text="Mysql:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <JFXSpinner fx:id="spinnerNginx" layoutX="231.0" layoutY="389.0" prefHeight="23.0" prefWidth="24.0" radius="32.0" startingAngle="0.0" styleClass="spinner-track" />
+      <Label fx:id="labelNginx" layoutX="180.0" layoutY="391.0" text="Nginx:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="dateLabel" layoutX="35.0" layoutY="393.0" onMouseClicked="#relaunch" prefHeight="15.0" prefWidth="74.0" text="Label" />
+      <Label fx:id="labelMenuConfig" layoutX="85.0" layoutY="46.0" prefHeight="25.0" prefWidth="40.0" styleClass="title-cus" stylesheets="@../css/jfoenix-customer.css" text="配置" textFill="WHITE" />
+      <Label fx:id="labelMenuLog" layoutX="145.0" layoutY="46.0" prefHeight="25.0" prefWidth="40.0" styleClass="title-cus" stylesheets="@../css/jfoenix-customer.css" text="日志" textFill="WHITE" />
+      <Label fx:id="labelBackupRecovery" layoutX="205.0" layoutY="46.0" prefHeight="25.0" prefWidth="80.0" styleClass="title-cus" stylesheets="@../css/jfoenix-customer.css" text="备份/恢复" textFill="WHITE" />
+      <Label fx:id="labelUpdate" layoutX="305.0" layoutY="46.0" prefHeight="25.0" prefWidth="40.0" styleClass="title-cus" stylesheets="@../css/jfoenix-customer.css" text="升级" textFill="WHITE" />
+      <Label fx:id="labelHelp" layoutX="365.0" layoutY="46.0" prefHeight="25.0" prefWidth="40.0" styleClass="title-cus" stylesheets="@../css/jfoenix-customer.css" text="帮助" textFill="WHITE" />
+
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
